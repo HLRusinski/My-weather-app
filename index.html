@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+   <link href="src/styles.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body class="container">
+    <header>
+      <form id="city-search">
+      <input
+        type="text"
+        placeholder="Enter a city..."
+        required
+        class="search-box"
+        id="cityInput"
+      />
+      <input type="submit" value="Search" class="city" id="search-button"/>
+      </form>
+        <h1 id="current-city">London</h1>
+    </header>
+    <main>
+      <div>
+      <div class="current-weather">
+        <p>
+          <span id="date"> Monday 21:31</span>, wind and rain. <br />
+          Humidity:<strong> 92% </strong>Wind: <strong>19 mph</strong>
+        </p>
+      </div>
+      <img src="images/rain.gif" class="temp-emoji temp"> </div>
+      <div class="todays-temp temp">9°C</div>
+      <ul>
+        <li>
+          Tues <br />
+          <img src="images/rain.gif" class="remaining-week-emoji">
+          <br/> 13°C 9°C
+        </li>
+        <li>Weds <br/><img src="images/rain.gif" class="remaining-week-emoji"> <br/> 11°C 7°C</li>
+        <li>Thurs <br/><img src="images/cloudy.gif" class="remaining-week-emoji"><br/> 9°C 4°C</li>
+        <li>Fri<br/><img src="images/cloudy.gif" class="remaining-week-emoji"><br/> 8°C 4°C</li>
+        <li>Sat<br/><img src="images/cloudy.gif" class="remaining-week-emoji"><br/> 6°C 4°C</li>
+      </ul>
+    </div>
+    </main>
+    <br />
+    <hr/>
+    <footer>
+      Coded by Heana Rusinski💪 and is
+      <a href="#" target="_blank"> on Github </a> and
+      <a href="#" target="_blank"> hosted on netlify </a>
+    </footer>
+  </body>
+  <script src="src/week 3 hmwk.js"></script>
+</html>
